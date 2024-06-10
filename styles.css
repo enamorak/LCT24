@@ -1,0 +1,155 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.title-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.auth-title, .reg-title {
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #737D85;
+    margin: 0 10px; /* Расстояние между заголовками */
+}
+  
+.auth-title:active, .reg-title:active {
+    color: #003158;
+}
+  
+.auth-title:focus, .reg-title:focus {
+    outline: none;
+    color: #003158;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #737D85;
+}
+
+h1:hover {
+    color: #003158;
+}
+
+.registration-form {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #003158;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #737D85;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #003158;
+}
+
+.blur {  
+    display: inline-block;  
+    background-color: #D6E1FF;  
+    padding: 5px;
+} 
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #737D85;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons button img {
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #003158;
+}
+
+.consent {
+    text-align: center;
+}
+
+.save-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #737D85;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.save-button:hover {
+    background-color: #003158;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #D6E1FF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 100;
+}

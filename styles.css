@@ -185,17 +185,23 @@ a {
 
 /* главная страница */
 
-.main-buttons {
-    display: flex;
-    justify-content: center; 
-    width: 95%; 
-    margin: 0 auto;
+.container {
+    display: grid;
+    grid-gap: 0px;
+    justify-items: center;
+    align-items: start;
+    padding: 10px;
+}
+
+.main-buttons,
+.filter,
+.locations {
+    width: 100%;
 }
 
 .main-buttons {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: center; 
     margin: 0 auto;
 }
 
@@ -205,8 +211,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
+    background-color: #F8FCFF;
     border: 1px solid #737D85;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
@@ -233,7 +238,7 @@ a {
 .filter {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding-left: 20px;
     justify-content: center;
 }
@@ -253,47 +258,55 @@ a {
     background-color: #D6E1FF;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
-    max-width: 400px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+    width: 90%; 
+    position: relative;
 }
 
 .location-card img {
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .location-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 60%;
 }
 
 .location-icons {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+    position: absolute; 
+    top: 20px;
+    right: 0px;
 }
 
 .location-icons img {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    margin-left: 0px; /* Уменьшаем расстояние между иконками */
+    border-radius: 0; /* Убираем закругления у иконок */
 }
 
 .location-category {
     color: #737D85;
     font-size: 14px;
-    margin-bottom: 5px;
 }
 
 .location-name {
     color: #03111D;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: medium;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -301,18 +314,15 @@ a {
 .visit-button {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #003158;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
+    justify-content: center; 
+    color: #003158;
+    text-decoration: none;
+    font-weight: medium;
 }
 
 .visit-button img {
-    width: 20px;
-    height: 20px;
+    width: 48px; /* Увеличиваем размер иконки */
+    height: 48px;
     margin-left: 10px;
+    border-radius: 0; /* Убираем закругления у иконки */
 }

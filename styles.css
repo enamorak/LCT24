@@ -191,6 +191,7 @@ a {
     justify-items: center;
     align-items: start;
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 .main-buttons,
@@ -325,4 +326,251 @@ a {
     height: 48px;
     margin-left: 10px;
     border-radius: 0; /* Убираем закругления у иконки */
+}
+
+/* карточка локации */
+
+.location-details {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F8FCFF;
+    overflow-x: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #737D85;
+    margin-bottom: 10px;
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+.location-name {
+    color: #003158;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 32 / 24;
+    object-fit: cover;
+}
+
+.image-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.image-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.arrow-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.arrow-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    color: #003158;
+    font-weight: medium;
+    margin-right: 10px;
+}
+
+.info-text {
+    color: #03111D;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #CFD4D9;
+    margin: 20px 0;
+}
+
+.additional-info .info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-info .info-text {
+    text-align: right;
+}
+
+.section-title {
+    color: #03111D;
+    margin-bottom: 10px;
+}
+
+.address-list {
+    margin-bottom: 20px;
+}
+
+.address-item {
+    color: #737D85;
+    margin-bottom: 5px;
+}
+
+.address-text {
+    color: #03111D;
+}
+
+.description-section {
+    background-color: #EEF8FF;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-title {
+    color: #003158;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    color: #03111D;
+}
+
+.feedback-title {
+    color: #003158;
+    margin-bottom: 10px;
+}
+
+.feedback-section {
+    text-align: center;
+}
+
+/* отзывы */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737D85;
+    padding: 10px;
+}
+
+.back-link {
+    color: #737D85;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #003158;
+}
+
+.location-name {
+    margin-left: auto;
+}
+
+.reviews-heading {
+    color: #003158;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review-background {
+    background-color: #EEF8FF;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.review {
+    background-color: #EEF8FF;
+    padding: 10px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737D85;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    color: #003158;
+    margin: 0;
+}
+
+.leave-review-container {
+    position: sticky;
+    bottom: 0;
+}
+
+.leave-review-background {
+    background-color: #F8FCFF;
+    border: 1px solid #CFD4D9;
+    padding: 20px;
+}
+
+.leave-review-text {
+    color: #03111D;
+    margin-bottom: 10px;
+}
+
+.review-input {
+    background-color: #F8FCFF;
+    border: 1px solid #CFD4D9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #CFD4D9;
+    color: #F8FCFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #003158;
 }
